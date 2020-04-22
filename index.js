@@ -4,7 +4,12 @@ class Formatter {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
    static sanitize(string) {
+<<<<<<< HEAD
     return string.replace(/[^A-Za-z0-9 '-]/g, '')
+=======
+    // removes any non alpha-numeric characters except dash and single quotes (apostrophes)
+    return string.replace( /[^A-Za-z0-9 '-]/g, '' )
+>>>>>>> 58202ed52e207fa93869112e9169fcb3aca18cac
    }
   
    static titleize(sentence){
